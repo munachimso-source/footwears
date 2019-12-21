@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/footwears.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/css/font-awesome.css">
+    <title>Document</title>
+</head>
+<body>
+        <main>
+                <nav class="flex w-100-sm">
+                    <div class="brand-name w-100-sm text-center-sm">
+                        <i class="fa fa-align-right"></i>
+                        MANUCHIM HUB
+                    </div>
+                    <ul class="action-menu-list hide-sm">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-shopping-cart"></i> My Cart 
+                                <span id="cart-num">0</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <section>
+                    <div class="row">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,500</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                               Shoe A
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#" onclick="addToTrolley({name:'Shoe A',price:2500})"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product2.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,600</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                Shoe B
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"onclick="addToTrolley({name:'Shoe B',price:2600})"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product3.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,700</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                            Shoe C
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,800</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                              Shoe D
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,900</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                              Shoe E
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product2.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N2,500</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                               Shoe F
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product3.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,500</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                               Shoe G
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,000</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                    Shoe H
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product1.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,200</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                    Shoe I
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product2.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,400</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                    Shoe J
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product3.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,700</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                    Shoe K
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="img/product.jpg">
+                            </div>
+                            <ul class="icon-price">
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-paint-brush"></i></a></li>
+                                <li>
+                                    <span class="discount-price">N3,800</span>
+                                </li>
+                            </ul>
+                            <div class="product-name">
+                                    Shoe L
+                            </div>
+                            <div class="btn-buynow">
+                                <a href="#"> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+    <script src="./swagg.js"></script>
+</body>
+</html>

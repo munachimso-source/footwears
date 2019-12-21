@@ -1,0 +1,331 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+} 
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+ul,ol{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.hide-all {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hide-sm {
+        display: none !important;   
+    }
+    .text-center-sm {
+        text-align: center; 
+    }
+    
+    .mobile-menu {
+        margin-top: 50px;
+        background-color: #000;
+        color: white;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .mobile-menu > * {
+        flex: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px){
+    .hide-md {
+        display: none !important;   
+    }
+}
+
+
+@media (min-width: 991px) {
+    .hide-lg {
+        display: none !important;   
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+aside{
+    flex-basis: 15%;
+    background-color: #cccccc;
+    height: 100vh;
+    border-right: 1px solid #bbbbbb;
+    position: fixed;
+}
+
+aside form{
+    background-color: white;
+    padding: 10px;
+
+}
+input[type="search"] {
+    border: 0px;
+    width: 100%;
+    height: 30px;
+    outline: 0;
+}
+
+aside h4{
+    padding: 10px;
+}
+
+aside .sidebar{
+    padding: 10, 0;
+}
+
+aside .sidebar ul{
+    margin-bottom: 20px;
+
+}
+aside .sidebar ul li{
+    border-bottom: 1px solid #bbbbbb;
+    padding: 10px 10px 5px;
+
+}
+
+aside .sidebar ul li:hover {
+    background: green;
+    color: white;
+}
+
+aside .sidebar ol{
+    padding: 0 10px;
+
+}
+
+aside .sidebar ol li{
+    flex: 1;
+}
+
+main {
+/*    flex-basis: 80%;*/
+    flex: 1;
+    margin-left: 14.2%;
+}
+
+@media (max-width: 991px) {
+   main {
+       margin-left: 0;
+   } 
+}
+
+main nav {
+    border-bottom: 3px solid black;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    width: 86.5%;
+    background-color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .w-100-sm {
+        width: 100%   
+    }
+}
+
+@media (min-width: 991px) {
+    .w-100-lg {
+        width: 100%   
+    }
+}
+
+main nav .brand-name {
+    background-color: red;
+    color: white;
+    padding: 13px 10px;
+    font-size: 1.3em;
+}
+
+main nav ul.left-menu-list, 
+main nav ul.action-menu-list {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+main nav ul.left-menu-list li {
+    display: inline;
+    padding: 17px 20px;
+    border-right: 1px solid #cccccc;
+    align-self: stretch;
+    position: relative;
+}
+
+main nav ul.left-menu-list li span.angle {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 40%;
+    bottom: 0px;
+}
+
+main nav ul.left-menu-list li a {
+    font-size: 0.9em;
+}
+
+main nav ul.left-menu-list li.active a {
+    color: red;
+}
+
+main nav ul.left-menu-list li:hover a {
+    color: red;
+}
+
+main nav ul.action-menu-list {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+main nav ul.action-menu-list li {
+    display: inline;
+    padding: 10px;
+    margin-right: 10px;
+}
+    
+main nav ul.action-menu-list li:first-child {
+    background-color: red;
+    border-radius: 15px;
+}
+
+main nav ul.action-menu-list li:first-child a {
+    color: white;
+}
+
+main nav ul.action-menu-list li:first-child a i {
+    color: black;
+    font-size: 1.3em;
+}
+
+main nav ul.action-menu-list li:first-child a span {
+    background-color: white;
+    color: red;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+
+main nav ul.action-menu-list li:nth-child(2) {
+    background-color: black;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+main nav ul.action-menu-list li:nth-child(2) span {
+    background-color: white;
+    padding: 0px 4px 1px;
+    border-radius: 50%;
+}
+
+main nav ul.action-menu-list li:nth-child(2) span i {
+    font-size: 0.8em;
+}
+
+main nav ul.action-menu-list li:last-child {
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+main section {
+/*    margin-top: 50px;   */
+}
+
+section div.row {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+}
+
+section div.row .product-item {
+    flex: 1;
+    padding: 20px 10px;
+    border-right: 1px solid #cccccc;
+}
+
+section div.row .product-item:last-child {
+    border-right: none;   
+}
+
+section div.row .product-item .product-img {
+    text-align: center;
+    z-index: 1000;
+}
+
+section div.row .product-item .product-img img {
+    height: 170px;
+    margin: auto;
+}
+
+section div.row .product-item ul.icon-price {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    margin-top: -28px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+section div.row .product-item ul.icon-price li {
+    padding: 3px 3px;
+    margin-right: 5px;
+    border: 1px solid #aaaaaa;
+    border-bottom: 0;
+    background-color: #f5f5f5;
+}
+
+section div.row .product-item ul.icon-price li:hover {
+    background-color: white;   
+}
+
+section div.row .product-item ul.icon-price i {
+    font-size: 0.8em;
+}
+
+section div.row .product-item ul.icon-price li:last-child {
+    margin-left: auto;
+    border: none;
+    background-color: #ffffff;
+}
+
+section div.row .product-item ul.icon-price li:last-child span.discount-price{
+    color: rgb(255, 102, 0);
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+section div.row .product-item ul.icon-price li:last-child span.main-price{
+    color: #aaaaaa;
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.btn-buynow {
+    margin-top: 15px;
+}
+
+.btn-buynow a {
+    border: 2px solid #aaaaaa;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.btn-buynow a:hover  {
+    border: 2px solid red;
+    color: red;
+    transition: all 0.4s;
+}
